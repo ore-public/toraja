@@ -1,6 +1,7 @@
 Toraja::Application.routes.draw do
   get "top/index"
   root to: "top#index"
+  resources :blocks, only: [:create, :update]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
